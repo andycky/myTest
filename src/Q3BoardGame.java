@@ -13,7 +13,6 @@ class Q3BroadGame
     {
         int[] table = new int[n+1];
         // table[i] will store count of solutions for
-
         // Base case (If given value is 0)
         table[0] = 1;
 
