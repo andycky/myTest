@@ -64,7 +64,7 @@ class Q3BoardGameNPR
     // Driver Code
     public static void main(String[] args)
     {
-        int n =6;
+        int n =8;
         int[] str1 = {1,2,3,4,5,6};
         List<Integer> str = Arrays.stream(str1).boxed().collect(Collectors.toList());
 
@@ -75,9 +75,9 @@ class Q3BoardGameNPR
             for (int j = 1; j <= i; j++) {
                 allLexicographic(result, str, j, i);
             }
-            System.out.print(result);
-            System.out.print(",Number of way to Move "+i+": ");
+            System.out.print("Number of way to Move "+i+": ");
             System.out.println(result.toArray().length);
+            System.out.println(result);
         }
     }
 }
