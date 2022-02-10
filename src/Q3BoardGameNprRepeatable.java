@@ -33,7 +33,8 @@ class Q3BoardGameNprRepeatable
             if (index == last) {
                 if(data.stream()
                         .mapToInt(a -> a)
-                        .sum()==n)result.add(List.copyOf(data));
+                        .sum()==n)
+                    result.add(List.copyOf(data));
                 //return data;
                 //System.out.println(data);
                 //System.out.println(str);

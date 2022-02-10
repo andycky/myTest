@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /* Program in Java for finding possible ways of arriving exactly at the finishing point as mentioned above*/
-class Q3BoardGameCnt
+class Q3BoardGameCnt610
 
 {
     static List<List<Integer>> result = new ArrayList<List<Integer>>();
@@ -48,7 +48,7 @@ class Q3BoardGameCnt
         if (space >= 2 && space <=6) {
             combination +=1;
         }
-  //      System.out.println(result);
+        //      System.out.println(result);
         return combination;
     }
 
@@ -57,14 +57,16 @@ class Q3BoardGameCnt
     public static void main(String args[])
 
     {
-        for (int n=1; n<=10; n++) {
+        for (int n=610; n<=610; n++) {
             result = new ArrayList<List<Integer>>();
             int[] movedResult={};
             System.out.println("Number of possible ways to exactly move " + n + " spaces=" + getCombination2(movedResult,n));
-            System.out.println("Cases="+result);
+            //System.out.println("Cases="+result);
             //resu
             System.out.println("count="+result.toArray().length);
         }
+        //int n = 610;
+        //System.out.println("Number of possible ways to exactly move " + n + " spaces=" + getCombination2(n));
     }
 
 }
