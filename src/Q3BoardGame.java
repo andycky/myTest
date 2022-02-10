@@ -2,6 +2,7 @@
 
 import java.io.*;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class Q3BroadGame
@@ -19,29 +20,38 @@ class Q3BroadGame
         // One by one consider given 3 moves and update the table[]
         // values after the index greater than or equal to the
         // value of the picked move
-//        for (int j=1; j<=6; j++) {
- //           for (int i=j; i<=n; i++)
+
+        ArrayList<Integer> m = new ArrayList<Integer>();
+
+        for (int j=1; j<=6; j++) {
+           for (int i=1; i<=n; i++)
 //                table[i] += table[i-j];
+               m.add(Integer.valueOf(j));
+        }
+        System.out.println(m);
+//        for (int j=1; j<=6; j++) {
+//            for (int i = j; i <= n; i++)
+//                table[i] += table[i - j];
 //        }
-        for (int i = 1; i <= n; i++)
-            table[i] += table[i - 1];
-        for (int i = 2; i <= n; i++)
-            table[i] += table[i - 2];
-        for (int i = 3; i <= n; i++)
-            table[i] += table[i - 3];
-        for (int i = 4; i <= n; i++)
-            table[i] += table[i - 4];
-        for (int i = 5; i <= n; i++)
-            table[i] += table[i - 5];
-        for (int i = 6; i <= n; i++)
-            table[i] += table[i - 6];
         return table[n];
+    }
+
+    static int sum(){
+        ArrayList<Integer> m = new ArrayList<Integer>();
+        m.add(Integer.valueOf(1));
+        m.add(Integer.valueOf(2));
+        m.add(Integer.valueOf(3));
+        return m.stream()
+                .mapToInt(a -> a)
+                .sum();
     }
 
     public static void main(String args[])
 
     {
-        int n=610;
+        System.out.println(sum());
+
+        int n=4;
         System.out.println("Number of possible ways to exactly move "+n+" spaces="+getCombinaison(n));
     }
 
