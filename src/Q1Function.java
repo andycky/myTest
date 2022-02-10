@@ -18,7 +18,6 @@ class Q1Function
                 break;
             default:
                 result = functionn(n-1) + functionn(n-2);
-                // code block
         }
             //System.out.println("result="+result);
         return result;
