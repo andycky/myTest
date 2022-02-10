@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class Q3BoardGameNprRepeatable
+class Q3BoardGameNprRepeatable610
 {
 
     // The main function that recursively prints
@@ -64,21 +64,17 @@ class Q3BoardGameNprRepeatable
     // Driver Code
     public static void main(String[] args)
     {
-        int n =10;
+        int n =8;
         int[] str1 = {1,2,3,4,5,6};
         List<Integer> str = Arrays.stream(str1).boxed().collect(Collectors.toList());
 
         System.out.printf("All permutations with " +
                 "repetition of %s are: \n", str);
-        for (int i = 1; i <= n; i++) {
-            List<List<Integer>> result = new ArrayList<List<Integer>>();
-            for (int j = 1; j <= i; j++) {
-                allLexicographic(result, str, j, i);
-            }
-            System.out.print("Number of way to Move "+i+": ");
-            System.out.println(result.toArray().length);
-            if(i<=8)System.out.println(result);
-        }
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+            allLexicographic(result, str, 610, 610);
+        System.out.print("Number of way to Move "+610+": ");
+        System.out.println(result.toArray().length);
+        System.out.println(result);
     }
 }
 
