@@ -1,5 +1,5 @@
 /* Program in Java for finding possible ways of arriving exactly at the finishing point as mentioned above*/
-class Q3BroadGame
+class Q3BoardGame
 
 {
     // Returns number of ways to reach score n

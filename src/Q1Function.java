@@ -31,5 +31,3 @@ class Q1Function
         System.out.println("final result="+result);
     }
 }
-
-// This code is contributed by mits

@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class Q3BoardGameNPR
+class Q3BoardGameNprRepeatable
 {
 
     // The main function that recursively prints
@@ -79,6 +79,12 @@ class Q3BoardGameNPR
             System.out.println(result.toArray().length);
             System.out.println(result);
         }
+
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+            allLexicographic(result, str, 610, 610);
+        System.out.print("Number of way to Move "+610+": ");
+        System.out.println(result.toArray().length);
+        System.out.println(result);
     }
 }
 
