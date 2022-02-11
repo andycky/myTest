@@ -1,13 +1,14 @@
 // Java implementation of the approach
-import java.util.*;
 
-class Q1Function
+class Q1Function2
 {
-    //static HashMap<Integer,Integer> cache = new HashMap<Integer,Integer>;
+    static int n = 8181;
+
     // Function to find n positive integers
 // that satisfy the given conditions
     static int functionn(int n)
     {
+        //System.out.print("input="+n+", ");
         int result;
         switch(n) {
             case 0:
@@ -26,9 +27,9 @@ class Q1Function
     // Driver code
     public static void main (String[] args)
     {
-        int n = 15;
-        System.out.println("Q1: for n="+n);
+        long start = System.nanoTime();
         int result = functionn(n);
-        System.out.println("final result="+result);
+        long elapsedTime = System.nanoTime() - start;
+        System.out.println("final result="+result+", Time="+elapsedTime/1000000);
     }
 }

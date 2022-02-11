@@ -60,13 +60,12 @@ class Q3BoardGameCnt610
         for (int n=610; n<=610; n++) {
             result = new ArrayList<List<Integer>>();
             int[] movedResult={};
-            System.out.println("Number of possible ways to exactly move " + n + " spaces=" + getCombination2(movedResult,n));
-            //System.out.println("Cases="+result);
+            //System.out.println("Number of possible ways to exactly move " + n + " spaces=" + getCombination2(movedResult,n));
+            getCombination2(movedResult,n);
+            System.out.println("Cases="+result);
             //resu
             System.out.println("count="+result.toArray().length);
         }
-        //int n = 610;
-        //System.out.println("Number of possible ways to exactly move " + n + " spaces=" + getCombination2(n));
     }
 
 }
